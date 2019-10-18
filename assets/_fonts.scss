@@ -1,0 +1,38 @@
+$font_Boxed_SemiBold: 'Boxed_Semibold', sans-serif;
+$h2_Semi_Bold: 64px/49px Boxed_Semibold;
+$font_Boxed_Medium: 'Boxed_Medium', sans-serif;
+$font_medium: 16px/16px Boxed_Medium;
+$font_Boxed_Regular: 16px/30px Boxed_Regular;
+$btn_Regular: 16px/19px Boxed_Regular;
+$lead_Regular: 25px/30px Boxed_Regular;
+
+
+$font_Boxed_Regular_Bold: 'Boxed_Regular_Bold', sans-serif;
+
+@font-face {
+  font-family: 'Boxed_Semibold';
+  src: url('assets/fonts/boxed/Boxed_Semibold.ttf') format('Truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boxed_Medium';
+  src: url('assets/fonts/boxed/Boxed_Medium.ttf') format('Truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boxed_Regular';
+  src: url('assets/fonts/boxed/Boxed_Regular.ttf') format('Truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boxed_Regular_Bold';
+  src: url('assets/fonts/boxed/Boxed_Regular_Bold.ttf') format('Truetype');
+  font-weight: normal;
+  font-style: normal;
+}

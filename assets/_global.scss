@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: $colorTextGrey; 
+  font: $font_Boxed_Regular;
+  line-height: 1.3;
+}
+
+.btn {
+  background-color: #da2032;
+  color: #fff;
+  font: $btn_Regular;
+  border-radius: 30px;
+  padding: 13px 51px 11px;
+  display: inline-block;
+
+  @media #{$m-760-d} {
+    padding: 7px 30px 5px;
+  }
+
+  &.unfilled {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  &.dark {
+    background: transparent;
+    color: #2D2D2D;
+    border: 2px solid #2D2D2D;
+
+    &:hover {
+      border-color: $colorRed;
+      background: transparent;
+    }
+  }
+
+  &:hover {
+    color: $colorRed;
+    background: transparent;
+    border-color: $colorRed;
+  }
+
+  &--sm {
+    padding: 9px 25px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.lead {
+  color: $colorTextGrey; 
+  font: $lead_Regular;
+  margin-bottom:66px;
+}
+
+
+hr {
+  border-top: 1px solid $colorLine;
+}
