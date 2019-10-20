@@ -15,6 +15,10 @@
       <nav class="navbar navbar-expand-lg">
          <div class="container">
             <a aria-label="3dgene logo" class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="Logo"/></a>
+            <form class="form-inline text-uppercase d-inline d-lg-none">
+                  <a href="#" class="shop"><i class="fal fa-shopping-cart"></i> <span class="d-none d-lg-inline">Shop</span></a>
+                  <i class="fal fa-search"></i>
+               </form>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -31,8 +35,8 @@
                   <li class="nav-item"><a href="#">Support</a></li>
                </ul>
             </div>
-            <form class="form-inline text-uppercase">
-               <a href="#" class="shop"><i class="fal fa-shopping-cart"></i> Shop</a>
+            <form class="form-inline text-uppercase d-none d-lg-inline">
+               <a href="#" class="shop"><i class="fal fa-shopping-cart"></i> <span class="d-none d-lg-inline">Shop</span></a>
                <i class="fal fa-search"></i>
             </form>
          </div>
@@ -41,7 +45,7 @@
          <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2"
                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            Main page
+            Software
             </button>
             <div class="collapse navbar-collapse" id="nav2">
                <ul class="navbar-nav mr-auto text-uppercase">
@@ -58,8 +62,8 @@
       </nav>
       <div class="header-section software-bg">
          <div class="container">
-            <div class="row">
-               <div class="col-12 col-lg-6">
+            <div class="row justify-content-center justify-content-lg-start">
+               <div class="col-11 col-lg-6">
                   <h1 class="text-white">3D printing software</h1>
                   <h2>Meet industry 4.0 by using easy to handle software dedicated for 3DGence machines. It is a must-have for every user who wants to carry out his project quickly from start to finish.</h2>
                   <div class="row actions">
@@ -73,7 +77,7 @@
             </div>
          </div>
          <div class="scrollDown">
-            <i class="fas fa-chevron-circle-down"></i>
+               <i class="fal fa-chevron-down"></i>
          </div>
       </div>
       <div class="half-half-section inside">
@@ -81,24 +85,36 @@
             <div class="title">
                Software
             </div>
-            <div class="row pb-5 mb-5">
-               <div class="col-md-6">
+            <div class="row pb-4 pb-lg-5 mb-lg-5">
+               <div class="col-12 col-lg-6 d-none d-lg-block">
                   <img class="img-fluid d-block" src="assets/img/slicer_mockup.png">
                   <div class="row">
-                     <div class="col-md-8 mx-auto">
-                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/apple.svg" alt="">
-                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/windows.svg" alt="">
-                        <p class="small d-inline float-left mb-0 py-2 mr-5 pr-4">WORKS WITH<br>Windows and macOS</p>
-                        <p class="d-inline float-right mb-0 py-3 pl-3  pr-2"><a class="download-link" href="#">Download</a></p>
+                     <div class="col-md-10 mx-auto">
+
+<div class="row justify-content-start align-items-center">
+                           <div class="col-2"><img class="d-inline float-left img-fluid" src="assets/img/apple.svg" alt=""></div>
+                           <div class="col-2"><img class="d-inline float-left img-fluid" src="assets/img/windows.svg" alt=""></div>
+                           <div class="col-4"><p class="small d-inline float-left mb-0 ">WORKS WITH<br>Windows and macOS</p></div>
+                           <div class="col-4"> <p class="d-inline float-right mb-0 pl-3"><a class="download-link" href="#">Download</a></p>
+                              <div class="icon-down small d-inline float-right mb-0 "><i class="fal fa-arrow-to-bottom"></i> </div></div>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="px-md-5 p-3 col-12 col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                  <h2 class="text-center text-lg-left w-100">Slicer 4.0</h2>
+                  <p class="text-center text-lg-left w-100">Easy to handle slicing software</p>
+                  <img class="img-fluid d-block d-lg-none" src="assets/img/slicer_mockup.png">
+                  
+                     <div class="col-md-8 mx-auto d-block d-lg-none">
+                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/apple-mobile.svg" alt="">
+                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/windows-mobile.svg" alt="">
+                        <p class="d-inline float-right download-text mb-0 pl-3   pr-2"><a class="download-link" href="#">Download</a></p>
                         <div class="icon-down small d-inline float-right mb-0 "><i class="fal fa-arrow-to-bottom"></i> </div>
                      </div>
-                  </div>
-               </div>
-               <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-start justify-content-center">
-                  <h2>Slicer 4.0</h2>
-                  <p class="lead">Easy to handle slicing software</p>
-                  <p>Prepare your stl. file to be 3D printable with 3DGence Slicer 4.0, that gives you the wide choice of the pre-defined settings and useful functionality. It allows you for basic modification of models (rotating, scaling, mergint etc.), but also for changing all advanced print options. The key feature is the prepared material profiles by R&D department, that make you work easier and faster.</p>
-                  <div class="row actions ml-auto">
+                 
+                  <p class="description text-center text-lg-left">Prepare your stl. file to be 3D printable with 3DGence Slicer 4.0, that gives you the wide choice of the pre-defined settings and useful functionality. It allows you for basic modification of models (rotating, scaling, mergint etc.), but also for changing all advanced print options. The key feature is the prepared material profiles by R&D department, that make you work easier and faster.</p>
+                  <div class="row actions ml-auto mr-auto ml-lg-auto mr-lg-0">
                      <div class="col-sm-12">
                         <a href="#" class="btn">
                         Know more
@@ -109,27 +125,46 @@
             </div>
          </div>
       </div>
+
+
+
+
+
+
+
+
       <div class="half-half-section inside">
          <div class="container">
-            <hr>
-            <div class="row pb-5 mb-5">
-               <div class="col-md-6">
+               <hr class="pb-3">
+            <div class="row pb-4 pb-lg-5 mb-lg-5">
+               <div class="col-12 col-lg-6 d-none d-lg-block">
                   <img class="img-fluid d-block" src="assets/img/slicer_mockup.png">
                   <div class="row">
-                     <div class="col-md-8 mx-auto">
-                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/apple.svg" alt="">
-                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/windows.svg" alt="">
-                        <p class="small d-inline float-left mb-0 py-2 mr-5 pr-4">WORKS WITH<br>Windows and macOS</p>
+                        <div class="col-md-10 mx-auto">
+   
+   <div class="row justify-content-start align-items-center">
+                              <div class="col-2"><img class="d-inline float-left img-fluid" src="assets/img/apple.svg" alt=""></div>
+                              <div class="col-2"><img class="d-inline float-left img-fluid" src="assets/img/windows.svg" alt=""></div>
+                              <div class="col-4"><p class="small d-inline float-left mb-0 ">WORKS WITH<br>Windows and macOS</p></div>
+                           
+                              </div>
+                        </div>
                      </div>
-                  </div>
                </div>
-               <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-start justify-content-center">
-                  <h2>Cloud</h2>
-                  <p class="lead">Online platform for 3D printing management</p>
-                  <p>Monitor your 3D printer through the network with 3DGence Cloud, that enables remote communication with machine. It allows you to fully control the 3D printing process, including runing and queuing printouts, collection of usage statistics and service functions. This solution definitely enhance your workflow, all you need is internet access.</p>
-                  <div class="row actions ml-auto">
+               <div class="px-md-5 p-3 col-12 col-lg-6 d-flex flex-column align-items-start justify-content-center">
+                  <h2 class="text-center text-lg-left w-100">Cloud</h2>
+                  <p class="text-center text-lg-left w-100">Online platform for 3D printing management</p>
+                  <img class="img-fluid d-block d-lg-none" src="assets/img/slicer_mockup.png">
+                  
+                     <div class="col-md-8 mx-auto d-block d-lg-none">
+                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/apple-mobile.svg" alt="">
+                        <img class="d-inline mr-4 pr-2 float-left" src="assets/img/windows-mobile.svg" alt="">
+                     </div>
+                 
+                  <p class="description text-center text-lg-left">Monitor your 3D printer through the network with 3DGence Cloud, that enables remote communication with machine. It allows you to fully control the 3D printing process, including runing and queuing printouts, collection of usage statistics and service functions. This solution definitely enhance your workflow, all you need is internet access.</p>
+                  <div class="row actions ml-auto mr-auto ml-lg-auto mr-lg-0">
                      <div class="col-sm-12">
-                        <a href="#" class="btn">
+                        <a href="#" class="btn mb-5 mb-lg-0">
                         Know more
                         </a>
                      </div>
@@ -138,6 +173,10 @@
             </div>
          </div>
       </div>
+
+
+
+
       </div>
       <footer>
          <div class="container">

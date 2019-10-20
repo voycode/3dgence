@@ -15613,6 +15613,26 @@ body {
   line-height: 1.3;
 }
 
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1077px) {
+  .container {
+    max-width: 990px;
+  }
+}
+@media (min-width: 1325px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1610px) {
+  .container {
+    max-width: 1620px;
+  }
+}
 .btn {
   background-color: #da2032;
   color: #fff;
@@ -15671,16 +15691,24 @@ hr {
 
 .scrollDown {
   position: absolute;
-  bottom: 50px;
+  bottom: -149px;
   right: 0;
   left: 0;
   text-align: center;
   margin: auto;
   font-size: 40px;
+  background: white;
+  border-radius: 100%;
+  color: #5D5C5C;
+  line-height: 50px;
+  font-size: 29px;
+  width: 50px;
 }
 @media all and (max-width: 759px) {
   .scrollDown {
-    display: none;
+    background: transparent;
+    color: white;
+    bottom: 90px;
   }
 }
 
@@ -15717,6 +15745,11 @@ nav .shop i {
 nav.navbar.navbar-expand-lg.sub {
   background: #000;
 }
+@media all and (max-width: 759px) {
+  nav.navbar.navbar-expand-lg.sub {
+    background: #2D2D2D;
+  }
+}
 nav.navbar.navbar-expand-lg.sub button.navbar-toggler {
   color: #fff;
   text-align: left;
@@ -15730,7 +15763,7 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 .header-section {
   width: 100%;
   min-height: 901px;
-  height: calc(100vh - 180px);
+  height: 901px;
   background: url(assets/img/bg/bg_main.png) center top -177px no-repeat;
   background-size: cover;
   color: #fff;
@@ -15740,7 +15773,8 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 }
 @media all and (max-width: 759px) {
   .header-section {
-    min-height: 640px;
+    min-height: 540px;
+    height: 540px;
     background: url(assets/img/bg/bg_main_mobile.png) center center no-repeat;
     background-size: cover;
   }
@@ -15765,6 +15799,7 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 @media all and (max-width: 759px) {
   .header-section h2 {
     font-size: 14px;
+    margin-bottom: 31px;
     text-align: center;
     line-height: 21px;
   }
@@ -15776,7 +15811,7 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 }
 @media all and (max-width: 759px) {
   .header-section .btn {
-    margin: 15px auto;
+    padding: 15px 19px;
   }
 }
 .header-section .btn:first-child {
@@ -15793,7 +15828,9 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 }
 @media all and (max-width: 759px) {
   .software-bg {
-    background: url(assets/img/bg/software_hero.png) center center no-repeat;
+    background: url(assets/img/bg/software_hero-mobile.png) center center no-repeat;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.62) 100%), url(assets/img/bg/software_hero-mobile.png);
+    background-size: cover;
   }
 }
 
@@ -15913,11 +15950,19 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 }
 
 .half-half-section .title {
-  font-size: 45px;
+  font: 45px/66px Boxed_Regular;
   color: #5D5C5C;
   position: relative;
   text-align: center;
   padding: 100px 0;
+}
+@media all and (max-width: 759px) {
+  .half-half-section .title {
+    color: #2D2D2D;
+    font: 25px/35px Boxed_Medium;
+    padding: 40px 0px 35px 0px;
+    margin-bottom: 48px;
+  }
 }
 .half-half-section .title:before {
   content: "";
@@ -15926,11 +15971,14 @@ nav.navbar.navbar-expand-lg.sub ul li a {
   width: 41%;
   position: absolute;
   top: 50%;
+  bottom: 0;
   left: 0;
 }
 @media all and (max-width: 759px) {
   .half-half-section .title:before {
-    display: none;
+    background: #C5C5C5;
+    width: 100%;
+    top: unset;
   }
 }
 .half-half-section .title:after {
@@ -15950,6 +15998,11 @@ nav.navbar.navbar-expand-lg.sub ul li a {
 .half-half-section .slider {
   margin-bottom: 100px;
   width: 100%;
+}
+@media all and (max-width: 759px) {
+  .half-half-section .btn {
+    padding: 15px 50px;
+  }
 }
 
 footer {
@@ -16038,11 +16091,25 @@ footer .nav ul li:first-child {
 .inside p {
   margin-bottom: 55px;
 }
+@media all and (max-width: 759px) {
+  .inside p {
+    color: #2D2D2D;
+    font: 16px/27px Boxed_Regular;
+    margin-bottom: 0px;
+  }
+}
 
 .inside h2 {
   color: #2D2D2D;
   font: 64px/49px Boxed_Semibold;
   margin-bottom: 24px;
+}
+@media all and (max-width: 759px) {
+  .inside h2 {
+    color: #2D2D2D;
+    font: 25px/35px Boxed_Medium;
+    margin-bottom: 18px;
+  }
 }
 
 .icon-down {
@@ -16055,14 +16122,128 @@ footer .nav ul li:first-child {
   color: white;
   font-size: 21px;
 }
+@media all and (max-width: 759px) {
+  .icon-down {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+  }
+}
 
 .download-link {
   color: #DA2032;
   font: 16px/16px Boxed_Medium;
 }
+@media all and (max-width: 759px) {
+  .download-link {
+    font: 12px/24px Boxed_Medium;
+  }
+}
 
 .download-link:hover {
   color: #DA2032;
+}
+
+.download-text {
+  line-height: 31px !important;
+  font-size: 12px;
+}
+
+@media all and (max-width: 759px) {
+  .description {
+    font: 14px/24px Boxed_Regular;
+    margin-top: 75px;
+    margin-bottom: 67px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .shop {
+    margin: 0 18px;
+    color: #5d5c5c;
+  }
+}
+@media (min-width: 992px) and (max-width: 1077px) {
+  nav ul li {
+    margin: 0 9px;
+    font-size: 10px;
+  }
+
+  .small {
+    font-size: 66% !important;
+  }
+
+  .icon-down {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 21px;
+  }
+
+  .download-link {
+    font: 12px/31px Boxed_Medium;
+  }
+
+  .half-half-section .title:before, .half-half-section .title:after {
+    width: 33%;
+  }
+}
+@media (min-width: 1077px) and (max-width: 1325px) {
+  nav ul li {
+    margin: 0 9px;
+    font-size: 10px;
+  }
+
+  .small {
+    font-size: 66% !important;
+  }
+
+  .icon-down {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 21px;
+  }
+
+  .download-link {
+    font: 12px/31px Boxed_Medium;
+  }
+
+  .half-half-section .title:before, .half-half-section .title:after {
+    width: 33%;
+  }
+}
+@media (min-width: 1325px) and (max-width: 1610px) {
+  nav ul li {
+    margin: 0 14px;
+    font-size: 13px;
+  }
+
+  .small {
+    font-size: 66% !important;
+  }
+
+  .icon-down {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 21px;
+  }
+
+  .download-link {
+    font: 12px/31px Boxed_Medium;
+  }
+}
+@media (min-width: 1610px) {
+  nav ul li {
+    margin: 0 28.5px;
+    font-size: 16px;
+  }
+
+  .download-link {
+    font: 16px/50px Boxed_Medium;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

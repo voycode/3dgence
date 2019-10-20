@@ -1,14 +1,25 @@
 .scrollDown {
   position: absolute;
-  bottom: 50px;
+  bottom: -149px;
   right: 0;
   left: 0;
   text-align: center;
   margin: auto;
   font-size: 40px;
 
+  background: white;
+  border-radius: 100%;
+  color: #5D5C5C;
+  line-height: 50px;
+  font-size: 29px;
+  width: 50px;
+
+
   @media #{$m-760-d}{
-    display: none;
+    background: transparent;
+    color: white;
+
+        bottom: 90px;
   }
 }
 
@@ -51,6 +62,11 @@ nav {
 nav.navbar.navbar-expand-lg.sub {
   background: $colorBlack;
 
+  @media #{$m-760-d} {
+ 
+    background: $black;
+  }
+
   button.navbar-toggler {
     color: #fff;
     text-align: left;
@@ -72,7 +88,7 @@ nav.navbar.navbar-expand-lg.sub {
 .header-section {
   width: 100%;
   min-height: 901px;
-  height: calc(100vh - 180px);
+  height: 901px;
   background: url(assets/img/bg/bg_main.png) center top -177px no-repeat;
   background-size: cover;
   color: #fff;
@@ -81,9 +97,11 @@ nav.navbar.navbar-expand-lg.sub {
   align-items: center;
 
   @media #{$m-760-d} {
-    min-height: 640px;
+    min-height: 540px;
+    height: 540px;
     background: url(assets/img/bg/bg_main_mobile.png) center center no-repeat;
     background-size: cover;
+    
   }
 
   h1 {
@@ -105,6 +123,7 @@ nav.navbar.navbar-expand-lg.sub {
 
     @media #{$m-760-d}{
       font-size: 14px;
+      margin-bottom: 31px;
       text-align: center;
       line-height: 21px;
     }
@@ -118,7 +137,7 @@ nav.navbar.navbar-expand-lg.sub {
 
   .btn {
     @media #{$m-760-d}{
-      margin: 15px auto;
+      padding:15px 19px;
     }
 
     &:first-child {
@@ -134,7 +153,11 @@ nav.navbar.navbar-expand-lg.sub {
   
   background: url(assets/img/bg/software_hero.png) center top -177px no-repeat;
 @media #{$m-760-d} {
-background: url(assets/img/bg/software_hero.png) center center no-repeat;
+  background: url(assets/img/bg/software_hero-mobile.png) center center no-repeat;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.62) 0%,rgba(0, 0, 0, 0.62) 100%), url(assets/img/bg/software_hero-mobile.png) ;
+
+  background-size: cover;
 }
 }
 
@@ -266,12 +289,21 @@ background: url(assets/img/bg/software_hero.png) center center no-repeat;
 
 
 .half-half-section {
+
+
   .title {
-    font-size: 45px;
+    font: $font_medium_h2;
     color: #5D5C5C;
     position: relative;
     text-align: center;
     padding: 100px 0;
+
+    @media #{$m-760-d}{
+    color:$black;
+    font: $font_medium_h2_mobile;
+    padding: 40px 0px 35px 0px;
+    margin-bottom: 48px;
+    }
 
     &:before {
       content: '';
@@ -280,10 +312,13 @@ background: url(assets/img/bg/software_hero.png) center center no-repeat;
       width: 41%;
       position: absolute;
       top: 50%;
+      bottom:0;
       left: 0;
 
       @media #{$m-760-d}{
-        display: none;
+        background: $colorGreyDark;
+        width: 100%;
+        top: unset;
       }
     }
 
@@ -306,6 +341,14 @@ background: url(assets/img/bg/software_hero.png) center center no-repeat;
     margin-bottom: 100px;
     width: 100%;
   }
+
+  .btn {
+    @media #{$m-760-d}{
+      padding:15px 50px;
+    }
+  }
+
+
 }
 
 footer {
@@ -416,11 +459,22 @@ footer {
 
 .inside p {
   margin-bottom:55px;
+  @media #{$m-760-d}{
+    color:$black;
+    font: $font_regular_mobile;
+    margin-bottom: 0px;
+    }
 }
 .inside h2 {
   color: $colorTextGrey; 
   font:$h2_Semi_Bold;
   margin-bottom:24px;
+  
+  @media #{$m-760-d}{
+    color:$black;
+    font: $font_medium_h2_mobile;
+  margin-bottom:18px;
+    }
 }
 
 .icon-down {
@@ -432,13 +486,117 @@ footer {
   background: $colorRed;
   color: white;
   font-size: 21px;
+  @media #{$m-760-d}{
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 14px;
+    }
 }
 
 .download-link {
   color:$colorRed;
   font:$font_medium;
+  @media #{$m-760-d}{
+    font:$font_medium_small;
+      }
 }
 
 .download-link:hover {
   color:$colorRed;
 }
+
+
+.download-text {
+  line-height: 31px !important;
+  font-size: 12px;
+}
+
+.description {
+  @media #{$m-760-d}{
+    font:$font_medium_small-sec;
+    margin-top:75px;
+    margin-bottom:67px !important;
+      }
+}
+
+@media (max-width:768px) {
+  nav .shop {
+    margin: 0 18px;
+    color: #5d5c5c;
+}
+}
+
+@media (min-width: 992px) and (max-width:1077px) {
+  nav ul li {
+    margin: 0 9px;
+    font-size: 10px;
+}
+.small {
+  font-size: 66% !important;
+}
+.icon-down {
+width: 31px;
+height: 31px;
+line-height: 31px;
+font-size: 21px;
+}
+.download-link {
+font: 12px/31px Boxed_Medium;
+}
+.half-half-section .title:before , .half-half-section .title:after {
+  width: 33%;
+}
+  }
+  @media (min-width: 1077px) and (max-width:1325px) {
+    nav ul li {
+      margin: 0 9px;
+      font-size: 10px;
+  }
+  .small {
+    font-size: 66% !important;
+}
+.icon-down {
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 21px;
+}
+.download-link {
+  font: 12px/31px Boxed_Medium;
+}
+
+
+.half-half-section .title:before , .half-half-section .title:after {
+  width: 33%;
+}
+
+    }
+  @media (min-width: 1325px) and (max-width: 1610px) {
+    nav ul li {
+      margin: 0 14px;
+      font-size: 13px;
+  }
+  .small {
+    font-size: 66% !important;
+}
+.icon-down {
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 21px;
+}
+.download-link {
+  font: 12px/31px Boxed_Medium;
+}
+
+  }
+  @media (min-width: 1610px) {
+    nav ul li {
+      margin: 0 28.5px;
+      font-size: 16px;
+  }
+  .download-link {
+    font: 16px/50px Boxed_Medium;
+    }
+  }

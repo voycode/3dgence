@@ -16,6 +16,27 @@ body {
   line-height: 1.3;
 }
 
+@media (min-width: 992px) {
+.container {
+    max-width: 960px;
+}
+}
+@media (min-width: 1077px) {
+  .container {
+      max-width: 990px;
+  }
+  }
+@media (min-width: 1325px) {
+.container {
+    max-width: 1200px;
+}
+}
+@media (min-width: 1610px) {
+  .container {
+      max-width: 1620px;
+  }
+  }
+
 .btn {
   background-color: #da2032;
   color: #fff;
